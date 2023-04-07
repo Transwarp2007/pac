@@ -1,4 +1,4 @@
-var proxy = "PROXY 192.168.2.188:8580;";
+var proxy = "SOCKS 127.0.0.1:2080;";
 
 var domains = {
   "huaglad.com": 1,
@@ -2210,7 +2210,7 @@ function ip2int(ip_string) {
     }
     else{
     	//ipv6 or invalid ip
-    	return 0;
+    	return 1;
     }
 }
 
